@@ -1,0 +1,49 @@
+'''Сумма ряда 0 - 88888888'''
+
+x = range(0, 88888889)
+print(sum(x))
+
+'''арифметические действия через onlinegdb'''
+
+x = 18 + (1 / 10) * (30 + (33 / 44) + 50 + (55 / 88)) / (9 / 10)
+print (x)
+
+'''Среднее арифметическое ряда [3, 4, 56, 100, 2, 2, 3]'''
+
+x = (3 + 4 + 56 + 100 + 2 + 2 + 3) / 7 
+print (x)
+
+import statistics
+print(statistics.mean([3,4,56,100,2,2,3]))
+
+
+'''Заменить в строке "asdxfghyxyx" все буквы "х" на "у"'''
+
+original_word = 'asdxfghyxyx'
+
+new_word = ''
+
+for b in original_word:
+    if b == 'x':
+        new_word += 'y'
+    else:
+        new_word += b
+print (original_word)
+print (new_word)
+
+'''Заменить все буквы "х" на "у" в исходной строке
+без использования дополнительной строки'''
+
+word = 'asdxfghyxyx'
+print (word)
+print (word.replace('x', 'y'))
+
+'''Сосчитать произведение чисел [3, 4, 56, 100, 15, 2, 20, 30], 
+   кратных и 3 и 5'''
+
+numbers = [3, 4, 56, 100, 15, 2, 20, 30]
+total_multiplication = 1
+for x in numbers:
+    if x // 3 == x / 3 and x // 5 == x / 5:
+        total_multiplication *= x
+print (total_multiplication)
